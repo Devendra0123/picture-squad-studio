@@ -1,12 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Navbar from "./components/Header/Navbar";
+import MobileNav from "./components/Header/MobileNav";
 
 function App() {
   return (
     <div className="bg-darkGray w-full min-h-[100vh] ">
-      <Header />
+      <Navbar />
+      <MobileNav />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

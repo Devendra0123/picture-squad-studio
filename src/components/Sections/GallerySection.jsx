@@ -14,7 +14,7 @@ const GallerySection = () => {
             </button>
         </div>
 
-        <div className='w-full flex items-center gap-[20px] flex-wrap mt-[70px] '>
+        <div className='w-full flex items-center justify-center gap-[20px] flex-wrap mt-[70px] '>
             {
                 gallleryData?.length > 0 && gallleryData.map((item,index)=>(
                     <GalleryCard key={index} image={item.image} />

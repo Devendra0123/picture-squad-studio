@@ -2,7 +2,7 @@ import React from "react";
 
 const TrendingSession = () => {
   return (
-    <div className="w-[90%] h-full flex items-center gap-[30px] mt-[70px]">
+    <div className="w-[90%] h-full flex flex-col lg:flex-row items-center gap-[30px] mt-[70px]">
       <div
         style={{
           background: "rgba(255, 255, 255, 0.6)",
@@ -10,7 +10,7 @@ const TrendingSession = () => {
           backdropFilter: "blur(5px)",
           border: "1px solid rgba(255, 255, 255, 0.3)",
         }}
-        className="w-1/2 flex flex-col gap-[20px] items-center p-[20px] rounded-xl "
+        className="w-full lg:w-1/2 flex flex-col gap-[20px] items-center p-[20px] rounded-xl "
       >
         <h1 className="font-brunoAce text-xl font-bold tracking-[2px]">
           Trending Session
@@ -32,7 +32,7 @@ const TrendingSession = () => {
         </button>
       </div>
 
-      <div className="w-1/2 h-full p-[20px] rounded-xl flex flex-col gap-[30px] ">
+      <div className="w-full lg:w-1/2 h-full p-[20px] rounded-xl flex flex-col gap-[30px] ">
         {/* special offer bannner */}
         <div
           style={{

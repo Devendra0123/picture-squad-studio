@@ -2,8 +2,8 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-[100vh] w-full ">
-      <img src="./photography.jpg" alt="heroImage" className="w-full h-full object-cover" />
+    <div className="relative w-[100vw] min-h-[100vh] ">
+      <img src="./photography.jpg" alt="heroImage" className="w-[100vw] h-[100vh] object-cover" />
       {/* left overlay */}
       <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-black to-transparent" />
       {/* right overlay */}

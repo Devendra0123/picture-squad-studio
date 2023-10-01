@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { navLinks } from "../data/navLinks";
+import { navLinks } from "../../data/navLinks";
 
-const Header = () => {
+const Navbar = () => {
 
   const [scrollReachedViewport, setScrollReachedViewport] = useState(false);
 
@@ -25,7 +25,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`z-10 w-full flex flex-col ${scrollReachedViewport ? "bg-gray-800" : "bg-transparent"} fixed top-0`}>
+    <div className={`z-10 w-full hidden md:flex flex-col ${scrollReachedViewport ? "bg-gray-800" : "bg-transparent"} fixed top-0`}>
       <div className="relative w-full flex items-center gap-[30px] justify-evenly py-[30px] px-[20px] text-white font-brunoAce tracking-[2px]">
         <ul className="w-1/2 flex items-center justify-evenly gap-[20px] text-lg font-bold ">
           <li>Home</li>
@@ -50,4 +50,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
