@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const SessionCard = ({ title, image }) => {
+const SessionCard = ({ title, image, slug }) => {
   return (
-    <div className="group relative w-[300px] h-[300px] rounded-xl overflow-hidden shadow-md shadow-primaryBlue ">
+    <Link to={`/packages/${slug}`} className="group relative w-[300px] h-[300px] rounded-xl overflow-hidden shadow-md shadow-primaryBlue ">
       <img
         src={image}
         alt="sessionImage"
@@ -16,7 +17,7 @@ const SessionCard = ({ title, image }) => {
         Book Now
       </button>
 
-    </div>
+    </Link>
   );
 };
 

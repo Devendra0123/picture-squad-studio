@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Navbar from "./components/Header/Navbar";
 import MobileNav from "./components/Header/MobileNav";
+import Packages from "./pages/Packages";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <MobileNav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/packages/:slug" element={<Packages />} />
       </Routes>
       <Footer />
     </div>

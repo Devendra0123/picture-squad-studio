@@ -2,21 +2,21 @@ export const sessionCardData = [
   {
     title: "Maternity Packages",
     image: "./image2.jpg",
-    link: "",
+    slug: "maternity-packages",
   },
   {
     title: "Newborn Packages",
     image: "./image1.jpg",
-    link: "",
+    slug: "newborn-packages",
   },
   {
     title: "Toddler Packages",
     image: "./image3.jpg",
-    link: "",
+    slug: "toddler-packages",
   },
   {
     title: "Cake Smash Packages",
     image: "./image4.jpg",
-    link: "",
+    slug: "cake-smash-packages",
   },
 ];

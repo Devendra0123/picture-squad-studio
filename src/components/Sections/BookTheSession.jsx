@@ -16,7 +16,7 @@ const BookTheSession = () => {
 
         <div className='w-full flex items-center justify-center lg:justify-between gap-[50px] flex-wrap mt-[40px] '>
             {sessionCardData?.length > 0 && sessionCardData.map((item,index)=>(
-                <SessionCard key={index} title={item.title} image={item.image} />
+                <SessionCard key={index} title={item.title} image={item.image} slug={item.slug} />
             ))}
         </div>
     </div>
