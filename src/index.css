@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Montserrat&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Montserrat&family=Poppins&family=Pacifico&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,4 +7,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.curveLine {
+  width: 150px; 
+  height: 100px; 
+  position: absolute;
+  right: 0px;
+  top: 30px; 
+  border: solid 5px #279EFF;
+  border-color: #279EFF transparent transparent transparent;
+  border-radius: 50%/140px 140px 0 0;
 }

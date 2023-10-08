@@ -6,7 +6,8 @@ module.exports = {
       fontFamily: {
         brunoAce: "Bruno Ace",
         montserrat: "Montserrat",
-        pacifico: "Pacifico"
+        pacifico: "Pacifico",
+        poppins: "Poppins",
       },
       colors: {
         darkGray: "#353535",

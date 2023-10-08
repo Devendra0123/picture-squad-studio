@@ -26,13 +26,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`z-10 w-full hidden md:flex flex-col ${scrollReachedViewport ? "bg-gray-800" : "bg-transparent"} fixed top-0`}>
-      <div className="relative w-full flex items-center gap-[30px] justify-evenly py-[30px] px-[20px] text-white font-brunoAce tracking-[2px]">
-        <ul className="w-1/2 flex items-center justify-evenly gap-[20px] text-lg font-bold ">
-          <li><Link to="/">Home</Link></li>
-          <li>Session</li>
-        </ul>
-        <div className="absolute left-[50%] top-[50%] transform -translate-x-[50%] w-[110px] h-[110px] rounded-full flex items-center justify-center bg-white ">
+    <div className={`z-10 fixed top-0 w-full hidden md:flex flex-col items-center ${scrollReachedViewport ? "bg-gray-800" : "bg-transparent"}`}>
+      <div className="relative w-[80%] flex items-center gap-[30px] justify-end py-[20px] px-[20px] font-montserrat tracking-[2px]">
+        <div className="absolute top-[20px] left-[20px] w-[100px] h-[100px] rounded-full flex items-center justify-center bg-white ">
           <img
             src="./logo-noBg.png"
             alt="logo"
@@ -40,13 +36,22 @@ const Navbar = () => {
           />
         </div>
 
-        <ul className="w-1/2 flex items-center justify-evenly gap-[20px] text-lg font-bold text-white">
-          <li>Gallery</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+        <div className="w-max flex flex-col gap-[12px]">
+          <ul className="flex items-center justify-end gap-[20px] font-poppins">
+            {
+              navLinks.map((item, index) => (
+                <li key={index} className={`${index === navLinks.length - 1 && "bg-primaryBlue rounded-[4px]"} p-[10px]`}>
+                  <Link to={item.link}>
+                    {item.name}
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+          <div className="w-full h-[1px] bg-gradient-to-r from-slate-300 from-10% via-primaryBlue via-30% to-slate-300 to-90%" />
+        </div>
 
-      <div className="w-full h-[2px] bg-white" />
+      </div>
     </div>
   );
 };

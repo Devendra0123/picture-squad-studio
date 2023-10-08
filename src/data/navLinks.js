@@ -4,11 +4,11 @@ export const navLinks = [
         link: "/"
     },
     {
-        name: "About Us",
+        name: "Session",
         link: "/"
     },
     {
-        name: "Contact",
+        name: "Portfolio",
         link: "/"
     },
     {
@@ -16,7 +16,11 @@ export const navLinks = [
         link: "/"
     },
     {
-        name: "Rate Us",
+        name: "Blog",
+        link: "/"
+    },
+    {
+        name: "Contact",
         link: "/"
     },
 ]

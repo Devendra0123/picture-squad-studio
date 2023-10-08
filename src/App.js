@@ -7,7 +7,7 @@ import Packages from "./pages/Packages";
 
 function App() {
   return (
-    <div className="bg-darkGray w-full min-h-[100vh] ">
+    <div className=" w-full min-h-[100vh] ">
       <Navbar />
       <MobileNav />
       <Routes>
