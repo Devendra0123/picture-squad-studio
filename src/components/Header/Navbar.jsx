@@ -26,13 +26,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`z-10 fixed top-0 w-full hidden md:flex flex-col items-center ${scrollReachedViewport ? "bg-gray-800" : "bg-transparent"}`}>
+    <div className={`z-10 w-full hidden md:flex flex-col items-center ${scrollReachedViewport ? "bg-gray-800" : "bg-transparent"}`}>
       <div className="relative w-[80%] flex items-center gap-[30px] justify-end py-[20px] px-[20px] font-montserrat tracking-[2px]">
         <div className="absolute top-[20px] left-[20px] w-[100px] h-[100px] rounded-full flex items-center justify-center bg-white ">
           <img
             src="./logo-noBg.png"
             alt="logo"
-            className="w-[100px] h-[100px] rounded-full "
+            className="w-[120px] h-[120px] rounded-full "
           />
         </div>
 
