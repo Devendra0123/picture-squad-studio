@@ -14,9 +14,4 @@ export const sessionCardData = [
     image: "./image3.jpg",
     slug: "toddler-packages",
   },
-  {
-    title: "Cake Smash Packages",
-    image: "./image4.jpg",
-    slug: "cake-smash-packages",
-  },
 ];
