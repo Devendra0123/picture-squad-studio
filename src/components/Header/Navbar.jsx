@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className={`z-10 w-full hidden md:flex flex-col items-center ${scrollReachedViewport ? "bg-gray-800" : "bg-transparent"}`}>
-      <div className="relative w-[80%] flex items-center gap-[30px] justify-end py-[20px] px-[20px] font-montserrat tracking-[2px]">
+      <div className="navContainer relative w-[80%] flex items-center gap-[30px] justify-end py-[20px] px-[20px] font-montserrat tracking-[2px]">
         <div className="absolute top-[20px] left-[20px] w-[100px] h-[100px] rounded-full flex items-center justify-center bg-white ">
           <img
             src="./logo-noBg.png"
@@ -40,7 +40,7 @@ const Navbar = () => {
           <ul className="flex items-center justify-end gap-[20px] font-poppins">
             {
               navLinks.map((item, index) => (
-                <li key={index} className={`${index === navLinks.length - 1 && "bg-primaryBlue rounded-[4px]"} p-[10px]`}>
+                <li key={index} className={`${index === navLinks.length - 1 && "bg-[#f02c39] text-white rounded-[4px]"} p-[10px]`}>
                   <Link to={item.link}>
                     {item.name}
                   </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
               ))
             }
           </ul>
-          <div className="w-full h-[1px] bg-gradient-to-r from-slate-300 from-10% via-primaryBlue via-30% to-slate-300 to-90%" />
+         
         </div>
 
       </div>

@@ -4,9 +4,9 @@ import GalleryCard from '../Cards/GalleryCard'
 
 const GallerySection = () => {
   return (
-    <div className='w-[90%] py-[100px] flex flex-col items-center '>
-         <div className='w-full flex items-center justify-center gap-[50px] text-white'>
-            <h1 className='font-brunoAce text-xl font-bold tracking-[2px] underline underline-offset-8 decoration-primaryBlue'>
+    <div className='gallerySection w-[80%] py-[100px] flex flex-col items-center '>
+         <div className='w-full flex items-center justify-center gap-[50px]'>
+            <h1 className='font-poppins text-xl font-bold tracking-[2px] underline underline-offset-8 decoration-primaryBlue'>
                 Our Gallery
             </h1>
             <button className='bg-primaryBlue px-[30px] py-[10px] rounded-[4px] font-montserrat text-lg font-bold tracking-[2px]'>

@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .curveLine {
   width: 150px; 
@@ -17,4 +18,23 @@ body {
   border: solid 5px #279EFF;
   border-color: #279EFF transparent transparent transparent;
   border-radius: 50%/140px 140px 0 0;
+}
+
+@media screen and (max-width: 1375px) {
+  .navContainer{
+    width: 100%;
+  }
+  .heroContainer {
+    width: 100%;
+  }
+  .gallerySection{
+    width: 100%;
+  }
+  .bookSession{
+    width: 100%;
+  }
+  .trendingSession{
+    display: flex;
+    flex-direction: column;
+  }
 }
